@@ -18,7 +18,7 @@ class CommentFactory extends Factory
     {
         return [
             'content' => fake()->paragraph(random_int(1, 3), true),
-            'isValid' => fake()->shuffle(0, 1),
+            'is_valid' => random_int(0, 1),
         ];
     }
 }

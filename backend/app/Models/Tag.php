@@ -17,6 +17,6 @@ class Tag extends Model
 
     public function draws()
     {
-        $this->belongsToMany(Draw::class);
+        $this->belongsToMany(Draw::class, 'draws_tags');
     }
 }

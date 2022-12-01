@@ -22,9 +22,9 @@ class DrawFactory extends Factory
             'name' => $name,
             'description' => fake()->paragraph(4, true),
             'slug' => Str::slug($name, '-'),
-            'path' => 'https://picsum.photos/800/600?random=' . random_int(1, 100),
-            'likes' => random_int(0, 100),
-            'is_published' => fake()->shuffle(0, 1),
+            'path' => 'https://picsum.photos/800/600?random=' . random_int(1, 1000),
+            'like' => random_int(0, 100),
+            'is_published' => random_int(0, 1),
         ];
     }
 }

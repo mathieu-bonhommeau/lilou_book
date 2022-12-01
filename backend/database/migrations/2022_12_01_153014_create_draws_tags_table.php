@@ -23,7 +23,6 @@ return new class extends Migration
             $table->foreignIdFor(Tag::class)
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->timestamps();
         });
     }
 
